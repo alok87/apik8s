@@ -1,0 +1,5 @@
+apiVersion: group.mydomain/v1
+kind: Mykind
+metadata:
+  name: mykind-example
+spec:
