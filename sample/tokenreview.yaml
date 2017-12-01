@@ -1,5 +1,0 @@
-apiVersion: authentication.practodev/v1alpha1
-kind: TokenReview
-metadata:
-  name: tokenreview-example
-spec:

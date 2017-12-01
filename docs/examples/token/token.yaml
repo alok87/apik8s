@@ -1,0 +1,7 @@
+note: Token Example
+sample: |
+  apiVersion: authentication.practodev.com/v1
+  kind: Token
+  metadata:
+    name: token-example
+  spec:

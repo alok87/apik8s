@@ -1,4 +1,3 @@
-
 /*
 Copyright 2017 The Kubernetes Authors.
 
@@ -14,12 +13,25 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+package fake
 
+import (
+	v1 "github.com/alok87/apik8s/pkg/client/clientset_generated/clientset/typed/authentication/v1"
+	rest "k8s.io/client-go/rest"
+	testing "k8s.io/client-go/testing"
+)
 
+type FakeAuthenticationV1 struct {
+	*testing.Fake
+}
 
-// +k8s:deepcopy-gen=package,register
-// +groupName=authentication.practodev.com
+func (c *FakeAuthenticationV1) Tokens(namespace string) v1.TokenInterface {
+	return &FakeTokens{c, namespace}
+}
 
-// Package api is the internal version of the API.
-package authentication
-
+// RESTClient returns a RESTClient that is used to communicate
+// with API server by this client implementation.
+func (c *FakeAuthenticationV1) RESTClient() rest.Interface {
+	var ret *rest.RESTClient
+	return ret
+}

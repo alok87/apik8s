@@ -16,10 +16,14 @@ limitations under the License.
 */
 
 
+// Api versions allow the api contract for a resource to be changed while keeping
+// backward compatibility by support multiple concurrent versions
+// of the same resource
 
+// +k8s:openapi-gen=true
 // +k8s:deepcopy-gen=package,register
+// +k8s:conversion-gen=github.com/alok87/apik8s/pkg/apis/authentication
+// +k8s:defaulter-gen=TypeMeta
 // +groupName=authentication.practodev.com
-
-// Package api is the internal version of the API.
-package authentication
+package v1 // import "github.com/alok87/apik8s/pkg/apis/authentication/v1"
 

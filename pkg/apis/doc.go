@@ -18,7 +18,7 @@ limitations under the License.
 
 
 //
-// +domain=practodev
+// +domain=practodev.com
 
 package apis
 

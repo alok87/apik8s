@@ -1,1 +1,5 @@
 default.etcd
+bin/
+apiserver.local.config/
+kubeconfig
+.vscode
