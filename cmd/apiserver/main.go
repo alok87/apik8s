@@ -32,5 +32,5 @@ import (
 
 func main() {
 	version := "v0"
-	server.StartApiServer("/registry/mydomain", apis.GetAllApiBuilders(), openapi.GetOpenAPIDefinitions, "Api", version)
+	server.StartApiServer("/registry/practodev", apis.GetAllApiBuilders(), openapi.GetOpenAPIDefinitions, "Api", version)
 }

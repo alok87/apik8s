@@ -1,7 +1,0 @@
-note: Mykind Example
-sample: |
-  apiVersion: group.mydomain/v1
-  kind: Mykind
-  metadata:
-    name: mykind-example
-  spec:

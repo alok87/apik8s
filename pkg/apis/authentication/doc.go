@@ -17,8 +17,9 @@ limitations under the License.
 
 
 
-//
-// +domain=practodev
+// +k8s:deepcopy-gen=package,register
+// +groupName=authentication.practodev
 
-package apis
+// Package api is the internal version of the API.
+package authentication
 
